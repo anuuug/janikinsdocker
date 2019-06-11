@@ -1,6 +1,6 @@
 FROM centos
 RUN yum -y install httpd
 ADD . /var/www/html
-ENTRYPOINT httpd -d foreground
+ENTRYPOINT httpd -D FOREGROUND
 ENV name devops intellipaat
 
